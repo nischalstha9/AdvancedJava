@@ -7,9 +7,10 @@ public class Login implements ActionListener {
     JTextField tfUser;
     JPasswordField tfPassword;
     JButton JSubmit;
+    JFrame f;
 
     public Login() {
-        JFrame f = new JFrame("Login");
+        f = new JFrame("Login");
         JLabel lUser = new JLabel("Username");
         lUser.setBounds(20, 20, 150, 25);
         f.add(lUser);
@@ -19,7 +20,6 @@ public class Login implements ActionListener {
         f.add(tfUser);
 
         JLabel lPassword = new JLabel("Password");
-        // lPassword.setText("Password");
         lPassword.setBounds(20, 55, 150, 25);
         f.add(lPassword);
 
@@ -39,10 +39,14 @@ public class Login implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+        System.out.println(e.getActionCommand());
         String username = tfUser.getText();
         String password = tfPassword.getText();
         if (username.equals("admin") && password.equals("admin")) {
-            System.out.println("Authenticated!");
+            JDialog dialog = new JDialog(f, "Authenticated", true);
+            dialog.setLocationRelativeTo(dialog);
+            dialog.setSize(100, 100);
+            dialog.setVisible(true);
         } else {
             System.out.println("Wrong Credentials!");
         }
@@ -50,6 +54,5 @@ public class Login implements ActionListener {
 
     public static void main(String[] args) {
         new Login();
-
     }
 }
