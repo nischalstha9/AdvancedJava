@@ -1,7 +1,11 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/home/nischal/NIST-Study/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar",
-        "/home/nischal/Downloads/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar"
-    ]
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/home/nischal/NIST-Study/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar",
+    "/home/nischal/Downloads/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar",
+    "/home/nischal/Downloads/javax.servlet.jar",
+    "/home/nischal/Downloads/Java Libraries/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar",
+    "/home/nischal/Downloads/Java Libraries/javax.servlet.jar"
+  ],
+  "java.debug.settings.onBuildFailureProceed": true
 }

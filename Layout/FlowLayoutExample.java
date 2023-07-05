@@ -1,7 +1,6 @@
 package Layout;
 
 import java.awt.*;
-import java.swing.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,7 +22,7 @@ public class FlowLayoutExample {
         f.add(b4);
         f.add(b5);
 
-        f.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        f.setLayout(new FlowLayout(FlowLayout.LEADING));
         f.setSize(600, 600);
         f.setVisible(true);
     }
