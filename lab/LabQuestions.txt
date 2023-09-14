@@ -1,0 +1,6 @@
+9.Write a program to create JAVA BEAN which connect MYSQL database by passing email address and display employee information by using implementing setProperty and getProperty 
+10.Write a program to display student details using JSP.
+11.Create Form in servlet with Username and password. Read these values and display in the form.
+12.Write a servlet program to store values in cookie and display that value.
+13.Write a servlet program to store username in session and display tha value of session.
+14.Write a simple client and server program using RMI.
